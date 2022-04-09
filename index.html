@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>HTML Tables, Forms and Semantics</title>
+	</head>
+	<body>
+
+		<div align="center">
+			<!-- div is a container and a sample of a block element -->
+			
+			<h2>HTML Tables</h2>
+			<p> sample paragraph</p>
+
+			<table border="1">
+				<!-- thead - container that specifies the header of the table -->
+				<thead>
+					<!-- tr - table row, to create a row -->
+					<tr>
+						<!-- th - table heading, to create the title each cell -->
+						<th>Hi! I am your first cell</th>
+						<th>
+							2nd cell
+						</th>
+						<th>
+							3rd cell
+						</th>
+						<th>
+							4th cell
+						</th>
+					</tr>
+				</thead>
+
+				<tbody>
+					<tr>
+						<!-- td - table data, contains the data of the table -->
+						<th> Second row, first cell</th>
+
+						<!-- rowspan merging 2 rows. allows a single table cell to span the height of more than one cell or row -->
+						<td rowspan="2"> cell 2</td>
+
+						<!-- colspan - allows a single table cell to span the width of more than one cell or merging of columns -->
+						<td colspan="2"> cell 3</td>
+						
+					</tr>
+
+					<tr>
+						<th>Third row, first cell</th>
+						<td>2</td>
+						<td>3</td>
+					
+					</tr>
+					
+				</tbody>
+
+				<tfoot>
+
+					<tr>
+						
+					<td>Footer</td>
+
+					</tr>
+				</tfoot>
+
+
+
+			</table>
+
+			<table border="1">
+				<thead>
+					<tr>
+						<th>DAYS</th>
+						<th>9am</th>
+						<th>10am</th>
+						<th>11am</th>
+						<th>1pm</th>
+					</tr>
+
+				</thead>
+
+				<tbody>
+					<tr>
+						
+						<th>Monday</th>
+						<td colspan="2">geography</td>
+						<td>math</td>
+						<td rowspan="2">art</td>
+
+					</tr>
+
+					<tr>
+						<th>Tuesday</th>
+						<td colspan="3">Gym</td>
+						
+
+					</tr>
+
+				</tbody>
+
+
+			</table>
+
+
+
+
+
+
+		</div>
+
+
+		<div>
+			<h2>HTML Forms</h2>
+
+			<p>Input elements that make up a form</p>
+
+			<form action="">
+
+
+			<!-- Form - create a button that submit the form data -->
+				
+				<label for="firstName">First Name:</label>
+
+				<!-- Label tag - creates a text element that will serve as label for an input field. This creates an inline element.
+
+				- Input tag - creates a form input element to capture user input,. This creates an inline element.
+
+				- The "for" attributes is used with the "id" attributes in an input element. This allows the users to select the input field when they click on the label for a better user experience-->
+
+
+				<input type="text" placeholder="Input you name here" id="firstName" required autocomplete>
+
+				<button type="submit">Submit</button>
+
+
+
+
+			</form>
+
+
+		</div>
+
+		<div align="right">
+			<h2>Google Maps</h2>
+			<p>sample paragraph</p>
+		</div>
+
+
+	</body>
+</html>
