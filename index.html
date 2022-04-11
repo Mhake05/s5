@@ -7,7 +7,10 @@
 	</head>
 	<body>
 
-		<div align="center">
+		<strong>Bold text</strong>
+
+
+		<header align="center">
 			<!-- div is a container and a sample of a block element -->
 			
 			<h2>HTML Tables</h2>
@@ -106,10 +109,10 @@
 
 
 
-		</div>
+		</header>
 
 
-		<div>
+		<section>
 			<h2>HTML Forms</h2>
 
 			<p>Input elements that make up a form</p>
@@ -119,18 +122,107 @@
 
 			<!-- Form - create a button that submit the form data -->
 				
-				<label for="firstName">First Name:</label>
-
 				<!-- Label tag - creates a text element that will serve as label for an input field. This creates an inline element.
 
 				- Input tag - creates a form input element to capture user input,. This creates an inline element.
 
 				- The "for" attributes is used with the "id" attributes in an input element. This allows the users to select the input field when they click on the label for a better user experience-->
 
+				<label for="firstName">First Name:</label>
 
 				<input type="text" placeholder="Input you name here" id="firstName" required autocomplete>
 
+
+				<br>
+
+				<label for="lastName">Last Name:</label>
+
+				<input type="text" placeholder="Input you name here" id="lastName" required autocomplete>
+
+				<br>
+
+				<label for="birth_date">Birth Date:</label>
+
+				<input type="date" id="birth_date" required>
+
+				<br>
+
+				<label for="age">age</label>
+				<input type="number" id="age" required>
+
+				<br>
+
+				<label for="gender">Gender</label>
+
+				<!-- creates a dropdown menu -->
+
+				<select id="gender">
+					
+				<!-- creates an option for the dropdown -->
+				<option>Choose your gender</option>
+				<option value="Male">Male</option>
+				<option value="Female">Female</option>
+				<!-- The "value" attribute is the information that will be sent when the form is submitted -->
+
+				</select>
+
+
+				<br>
+
+
+				<label for="notes">Notes:</label>
+				<!-- create a larger text input-->
+				<br>
+
+				<textarea id="notes" rows="5" cols="30" style="resize: none"></textarea>
+
+				<br>
+
+				<!-- Radio Buttons -->
+				<label>New User</label>
+
+				<br>
+
+				<input type="radio" name="new_user" value="yes" id="yes">
+				<label for="yes">Yes</label>
+
+				<br>
+				<input type="radio" name="new_user" value="no" id="no">
+				<label for="no">No</label>
+
+
+
+				<br>
+
+
+				<!-- Checkbox for multiple choices -->
+				<label>Role</label>
+
+				<br>
+
+				<input type="checkbox" value="developer" id="developer">
+				<label for="developer">Developer</label>
+
+				<br>
+
+				<input type="checkbox" value="student" id="student">
+				<label for="student">Student</label>
+
+				<br>
+
+				<input type="checkbox" value="manager" id="manager">
+				<label for="manager">Manager</label>
+
+
+				<!-- br - create new line/enter -->
+				<br><br>
+
+
+				<!-- create a button that will submit the form data -->
 				<button type="submit">Submit</button>
+				<!-- create a button that will reset all the input fields -->
+				<button type="reset">reset</button>
+				&copy;
 
 
 
@@ -138,12 +230,17 @@
 			</form>
 
 
-		</div>
+		</section>
 
-		<div align="right">
+		<footer align="right">
 			<h2>Google Maps</h2>
-			<p>sample paragraph</p>
-		</div>
+			<p>to get the maps, we copy the embed of the google map</p>
+
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3860.434140052207!2d120.9911329152554!3d14.63128028024561!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397b6749d903679%3A0xe258661b04e08ab1!2sPhiladelphia%20Christcentered%20Fellowship!5e0!3m2!1sen!2sph!4v1649650092222!5m2!1sen!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+			
+
+		</footer>
 
 
 	</body>
